@@ -1,0 +1,17 @@
+{
+  "name": "tinyscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "linkedlist": "^1.0.1",
+    "mocha": "^8.2.1"
+  }
+}
