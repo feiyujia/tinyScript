@@ -48,10 +48,11 @@ class Lexer {
 
       // + -
       if (['+', '-'].includes(c) && AlphabetHelper.isNumber(lookahead)) {
-        // 跳过 a+1, 1+1
-        // +5 3*-5
+        // 跳过:a+1, 1+1
+        // +5, 3*-5
         const lastToken = tokens[tokens.length - 1] || null;
-        if (lastToken === null || !lastToken.isVariable()) {
+
+        if (lastToken == null || !lastToken.isValue()) {
           it.putBack();
           tokens.push(Token.makeNumber(it));
           continue;
